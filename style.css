@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: palevioletred;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul{
+    list-style-type: none;
+    
+}
+li{
+  color: white;
+  padding-left: 490px;
+}
+
+.gamecontainer{
+ display: flex;
+ justify-content: center;
+ margin-top: 40px;
+}
+.container{
+    display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows:repeat(3,10vw) ;
+cursor: pointer;
+position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(199, 150, 244);
+}
+.gameinfo{
+    padding: 0 34px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.imgbox img{
+   width: 0;
+   transition: width is ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+#reset{
+    margin: 0 23px;
+    padding: 8px 28px;
+    background-color: rgba(148, 255, 119, 0.695);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.info{
+    font-size: 25px;
+}
+.line{
+    background-color: rgb(83, 3, 47);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
